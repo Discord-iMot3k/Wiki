@@ -1,11 +1,25 @@
+# Information site
 site_name: Wiki iMot3k
 site_url: https://wiki.imot3k.fr
-copyright: Copyright &copy; 2024 - 2024 Staff Discord iMot3k
+site_author: Communauté Discord iMot3k
+
+site_description: >-
+  Un Wiki fait par la communauté Discord iMot3k.
+
+# Repository
+repo_name: Wiki iMot3k
 repo_url: https://github.com/Discord-iMot3k/wiki
+
+# Copyright
+copyright: Copyright &copy; 2024 - 2024 Staff Discord iMot3k
+
 
 theme:
   name: material
+  #custom_dir: overrides
   language: fr
+  logo: 'global_assets/WikiMot3k.png'
+  favicon: 'global_assets/favicon.ico'
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -21,41 +35,44 @@ theme:
     - navigation.footer
     - content.action.edit
     - content.action.view
+    - content.tabs.link
   icon:
-    logo: fontawesome/solid/wheelchair-move
     edit: material/pencil 
     view: material/eye
+    repo: material/code-block-parentheses
   palette:
-    # Palette toggle pour le mode automatique
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
-        name: Basculer en mode clair
-    # Palette toggle pour le mode clair
+        icon: material/link
+        name: Passer en mode clair
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
+      accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Basculer en mode sombre
-    # Palette toggle pour le mode sombre
+        icon: material/toggle-switch
+        name: Passer en mode sombre
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/brightness-4
-        name: Basculer selon la préférence système
+        icon: material/toggle-switch-off
+        name: Passer en mode préférence système
 
 plugins:
   - privacy
   - search
-  - blog
+  #- blog
   - tags:
-      tags_file: tags.md
+      #tags_file: tags.md
   - git-revision-date-localized:
       enable_creation_date: true
   # - offline
   - git-committers:
-      repository: "Discord-iMot3k/wiki-dev"
+      repository: "Discord-iMot3k/wiki"
       branch: master
+  - glightbox
 
 markdown_extensions:
   - admonition
@@ -72,7 +89,23 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+The following icon sets are bundled with Material for MkDocs:
   
 
 extra:
   generator: false
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.imot3k.fr
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@imot3k_
