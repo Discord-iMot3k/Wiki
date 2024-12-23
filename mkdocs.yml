@@ -39,6 +39,7 @@ theme:
   icon:
     edit: material/pencil 
     view: material/eye
+    repo: material/code-block-parentheses
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -91,6 +92,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+The following icon sets are bundled with Material for MkDocs:
   
 
 extra:
