@@ -1,0 +1,78 @@
+site_name: Wiki iMot3k
+site_url: https://wiki.imot3k.fr
+copyright: Copyright &copy; 2024 - 2024 Staff Discord iMot3k
+repo_url: https://github.com/Discord-iMot3k/wiki
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.prune
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+  icon:
+    logo: fontawesome/solid/wheelchair-move
+    edit: material/pencil 
+    view: material/eye
+  palette:
+    # Palette toggle pour le mode automatique
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Basculer en mode clair
+    # Palette toggle pour le mode clair
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Basculer en mode sombre
+    # Palette toggle pour le mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Basculer selon la préférence système
+
+plugins:
+  - privacy
+  - search
+  - blog
+  - tags:
+      tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - offline
+  - git-committers:
+      repository: "Discord-iMot3k/wiki-dev"
+      branch: master
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.blocks.caption
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  
+
+extra:
+  generator: false
