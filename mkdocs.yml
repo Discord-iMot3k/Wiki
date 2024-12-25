@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2024 - 2024 Staff Discord iMot3k
 
 theme:
   name: material
-  #custom_dir: overrides
+  custom_dir: overrides
   language: fr
   logo: 'global_assets/WikiMot3k.png'
   favicon: 'global_assets/favicon.ico'
