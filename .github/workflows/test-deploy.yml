@@ -68,6 +68,7 @@ jobs:
           fi
 
       - name: Send Discord Notification
+        if: always()
         run: |
           SUMMARY="Installation et configuration de Tailscale réussies.\nConnexion SSH et déploiement du dépôt réussis."
           EMBED_COLOR=3066993  # Vert
