@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <style>
+    .error-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: calc(100vh - 100px); /* Assure un espace avec le header */
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .error-content {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      background: var(--md-default-bg-color, rgba(255, 255, 255, 0.7)); /* Éclaircissement du fond */
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: rgba(255, 255, 255, 0.8); /* Texte légèrement blanc */
+      background-color: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.8); /* Contour légèrement blanc */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: var(--md-default-bg-color);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); }
+      to { transform: translateY(0); }
+    }
+  </style>
+
+  <div class="error-container">
+    <div class="error-content">
+      <h1>404 - Page non trouvée</h1>
+      <p>Nous sommes désolés, mais la page que vous cherchez n'existe pas.</p>
+      <img src="global_assets/404/404.svg" alt="404 Image" style="max-width: 100%; height: auto; margin-bottom: 30px;">
+      <div class="button-container">
+        <a href="/" class="button">Page d'accueil</a>
+        <button class="button" onclick="history.back()">Retour</button>
+      </div>
+    </div>
+  </div>
+{% endblock %}
