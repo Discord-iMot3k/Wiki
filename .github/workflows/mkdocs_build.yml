@@ -26,3 +26,65 @@ jobs:
             mkdocs-material-
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
+
+  deploy_to_production:
+    runs-on: ubuntu-latest
+    needs: deploy_on_github
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Environment Variables
+        env:
+          DISCORD_WEHBOOK_LOG: ${{ secrets.DISCORD_WEHBOOK_LOG }}
+          OAUTH_ID: ${{ secrets.OAUTH_ID }}
+          OAUTH_KEY: ${{ secrets.OAUTH_KEY }}
+          SVCGITHUB_SSH_KEYS: ${{ secrets.SVCGITHUB_SSH_KEYS }}
+          VM_IPV4: ${{ secrets.VM_IPV4 }}
+          VM_IPV6: ${{ secrets.VM_IPV6 }}
+        run: echo "Environment variables set."
+
+      - name: Install Tailscale
+        run: |
+          if curl -fsSL https://tailscale.com/install.sh | sh; then
+            echo "✅ Installation de Tailscale réussie."
+          else
+            echo "❌ Échec de l'installation de Tailscale."
+            exit 1
+          fi
+
+      - name: Configure Tailscale
+        run: |
+          if sudo tailscale up --auth-key=${{ secrets.OAUTH_KEY }} --advertise-tags=tag:github; then
+            echo "✅ Configuration de Tailscale réussie."
+          else
+            echo "❌ Échec de la configuration de Tailscale."
+            exit 1
+          fi
+
+      - name: SSH and Deploy
+        run: |
+          SSH_KEY_PATH="/tmp/svcgithub_key"
+          echo "${{ secrets.SVCGITHUB_SSH_KEYS }}" > "$SSH_KEY_PATH"
+          chmod 600 "$SSH_KEY_PATH"
+
+          SSH_TARGET=""
+          if [ -n "${{ secrets.VM_IPV4 }}" ]; then
+            SSH_TARGET="${{ secrets.VM_IPV4 }}"
+          elif [ -n "${{ secrets.VM_IPV6 }}" ]; then
+            SSH_TARGET="${{ secrets.VM_IPV6 }}"
+          else
+            echo "❌ Aucune adresse IP fournie pour la VM."
+            exit 1
+          fi
+
+          function deploy {
+            ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" "rm -rf /var/www/html/{*,.*} && git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git /var/www/html/."
+          }
+
+          if deploy; then
+            echo "✅ Connexion SSH et déploiement du dépôt réussis."
+          else
+            echo "❌ Échec de la connexion SSH ou du déploiement du dépôt."
+            exit 1
+          fi
