@@ -20,5 +20,63 @@ jobs:
           VM_IPV6: ${{ secrets.VM_IPV6 }}
         run: echo "Environment variables set."
 
-      - name: Run Sync Script
-        run: bash sync.sh
+      - name: Install Tailscale
+        run: |
+          if curl -fsSL https://tailscale.com/install.sh | sh; then
+            echo "✅ Installation de Tailscale réussie."
+          else
+            echo "❌ Échec de l'installation de Tailscale."
+            exit 1
+          fi
+
+      - name: Configure Tailscale
+        run: |
+          if sudo tailscale up --auth-key=${{ secrets.OAUTH_KEY }} --advertise-tags=tag:github; then
+            echo "✅ Configuration de Tailscale réussie."
+          else
+            echo "❌ Échec de la configuration de Tailscale."
+            exit 1
+          fi
+
+      - name: SSH and Deploy
+        run: |
+          SSH_KEY_PATH="/tmp/svcgithub_key"
+          echo "${{ secrets.SVCGITHUB_SSH_KEYS }}" > "$SSH_KEY_PATH"
+          chmod 600 "$SSH_KEY_PATH"
+
+          SSH_TARGET=""
+          if [ -n "${{ secrets.VM_IPV4 }}" ]; then
+            SSH_TARGET="${{ secrets.VM_IPV4 }}"
+          elif [ -n "${{ secrets.VM_IPV6 }}" ]; then
+            SSH_TARGET="${{ secrets.VM_IPV6 }}"
+          else
+            echo "❌ Aucune adresse IP fournie pour la VM."
+            exit 1
+          fi
+
+          ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" << 'EOF'
+            set -e
+            cd /var/html/www
+            rm -rf ./*
+            git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git .
+          EOF
+          if [ $? -eq 0 ]; then
+            echo "✅ Connexion SSH et déploiement du dépôt réussis."
+          else
+            echo "❌ Échec de la connexion SSH ou du déploiement du dépôt."
+            exit 1
+          fi
+
+      - name: Send Discord Notification
+        run: |
+          SUMMARY="Installation et configuration de Tailscale réussies.\nConnexion SSH et déploiement du dépôt réussis."
+          EMBED_COLOR=3066993  # Vert
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{
+                     "embeds": [{
+                       "title": "Résultat du script de déploiement",
+                       "description": "'"$SUMMARY"'",
+                       "color": '"$EMBED_COLOR"'
+                     }]
+                   }' "${{ secrets.DISCORD_WEHBOOK_LOG }}"
