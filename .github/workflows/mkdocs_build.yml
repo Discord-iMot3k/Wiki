@@ -88,3 +88,12 @@ jobs:
             echo "❌ Échec de la connexion SSH ou du déploiement du dépôt."
             exit 1
           fi
+      
+      - name: Logout from Tailscale
+        run: |
+          if sudo tailscale logout; then
+            echo "✅ Déconnexion de Tailscale réussie."
+          else
+            echo "❌ Échec de la déconnexion de Tailscale."
+            exit 1
+          fi
