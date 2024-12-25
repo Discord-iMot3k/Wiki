@@ -55,7 +55,7 @@ jobs:
           fi
 
           function deploy {
-            ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" "cd /var/html/www && rm -rf ./* && git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git ."
+            ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" "cd /var/www/html && rm -rf ./* && git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git ."
           }
 
           if deploy; then
