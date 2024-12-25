@@ -1,4 +1,4 @@
-name: Mkdocs Build
+name: Mkdocs Build And Deploy
 on:
   push:
     branches:
