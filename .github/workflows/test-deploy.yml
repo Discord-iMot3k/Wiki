@@ -54,13 +54,11 @@ jobs:
             exit 1
           fi
 
-          ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" << 'EOF'
-            set -e
-            cd /var/html/www
-            rm -rf ./*
-            git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git .
-          EOF
-          if [ $? -eq 0 ]; then
+          function deploy {
+            ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no svc-github@"$SSH_TARGET" "cd /var/html/www && rm -rf ./* && git clone --branch gh-pages https://github.com/Discord-iMot3k/Wiki.git ."
+          }
+
+          if deploy; then
             echo "✅ Connexion SSH et déploiement du dépôt réussis."
           else
             echo "❌ Échec de la connexion SSH ou du déploiement du dépôt."
@@ -68,7 +66,6 @@ jobs:
           fi
 
       - name: Send Discord Notification
-        if: always()
         run: |
           SUMMARY="Installation et configuration de Tailscale réussies.\nConnexion SSH et déploiement du dépôt réussis."
           EMBED_COLOR=3066993  # Vert
