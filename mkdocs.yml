@@ -63,7 +63,8 @@ theme:
 plugins:
   - privacy
   - search
-  - social
+  - social:
+      enabled: !ENV [CI, false]
   #- blog
   - tags:
       #tags_file: tags.md
@@ -73,6 +74,7 @@ plugins:
   - git-committers:
       repository: "Discord-iMot3k/wiki"
       branch: master
+      enabled: !ENV [CI, false]
   - glightbox
 
 markdown_extensions:
