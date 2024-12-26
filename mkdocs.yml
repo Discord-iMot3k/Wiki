@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2024 - 2024 Staff Discord iMot3k
 
 theme:
   name: material
-  #custom_dir: overrides
+  custom_dir: overrides
   language: fr
   logo: 'global_assets/WikiMot3k.png'
   favicon: 'global_assets/favicon.ico'
@@ -47,15 +47,15 @@ theme:
         name: Passer en mode clair
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: indigo
+      primary: indigo
+      accent: dark-orange
       toggle:
         icon: material/toggle-switch
         name: Passer en mode sombre
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: indigo
+      primary: light-blue
+      accent: amber
       toggle:
         icon: material/toggle-switch-off
         name: Passer en mode préférence système
@@ -63,6 +63,8 @@ theme:
 plugins:
   - privacy
   - search
+  - social:
+      enabled: !ENV [CI, false]
   #- blog
   - tags:
       #tags_file: tags.md
@@ -72,6 +74,7 @@ plugins:
   - git-committers:
       repository: "Discord-iMot3k/wiki"
       branch: master
+      enabled: !ENV [CI, false]
   - glightbox
 
 markdown_extensions:
@@ -100,7 +103,7 @@ The following icon sets are bundled with Material for MkDocs:
   
 
 extra:
-  generator: false
+  generator: true
   status:
     new: Recently added
     deprecated: Deprecated
@@ -109,3 +112,6 @@ extra:
       link: https://discord.imot3k.fr
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@imot3k_
+
+extra_css:
+  - stylesheets/extra.css

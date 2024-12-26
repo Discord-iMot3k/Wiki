@@ -1,1 +1,6 @@
-# WIP
+---
+title: Accueil
+hide:
+    - navigation
+    - toc
+---
