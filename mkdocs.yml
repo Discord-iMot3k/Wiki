@@ -36,6 +36,8 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
   icon:
     edit: material/pencil 
     view: material/eye
@@ -87,6 +89,9 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - tables
   - pymdownx.blocks.caption
   - pymdownx.smartsymbols
