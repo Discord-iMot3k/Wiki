@@ -172,15 +172,22 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     - [x] Rédiger le communiqué de presse
     - [ ] Mettre à jour le site web
     - [ ] Contacter les médias
+
+    !!! warning "Utilisation modérée"
+        Merci d'utiliser les listes de tâches avec modération, car elles occupent rapidement beaucoup d'espace...
+
     </div>
 
-=== "Emoji"
+=== "Emoji /Icons"
     ```markdown
-    C'est tellement drôle ! :joy:
+    C'est tellement drôle ! :joy: :material-cookie-alert:
     ```
     <div class="result" markdown>
 
-    C'est tellement drôle ! :joy:
+    C'est tellement drôle ! :joy: :material-cookie-alert:
+
+    !!! info "Listes d'émoji et d'icons"
+        Vous pouvez trouver la liste complète des icônes et des émojis sur la documentation officielle de MkDocs Material à l'adresse suivante : [Liste des icônes et émojis](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search).
     </div>
 
 === "Surlignage"
@@ -190,23 +197,7 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     <div class="result" markdown>
 
     Je dois surligner ces ==mots très importants==.
-    </div>
 
-=== "Indice"
-    ```markdown
-    H~2~O
-    ```
-    <div class="result" markdown>
-
-    H~2~O
-    </div>
-
-=== "Exposant"
-    ```markdown
-    X^2^
-    ```
-    <div class="result" markdown>
-
-    X^2^
+    !!! failure "Interdiction d'utiliser le surlignage dans cette doc"
 
     </div>
