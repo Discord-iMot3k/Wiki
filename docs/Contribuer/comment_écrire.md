@@ -117,7 +117,7 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
         Le séparateur sera au final qu'une barre mais peut être utile pour séparé des sections dans la page pour faciliter la lecture.
     </div>
 
-## Markdown intermédiaire
+---
 
 ## Markdown intermédiaire
 
@@ -134,41 +134,6 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     | ----------- | ----------- |
     | En-tête | Titre |
     | Paragraphe | Texte |
-
-    </div>
-
-=== "Bloc de code délimité"
-    ````markdown
-    ```
-    {
-      "firstName": "John",
-      "lastName": "Smith",
-      "age": 25
-    }
-    ```
-    ````
-    <div class="result" markdown>
-
-    ```
-    {
-      "firstName": "John",
-      "lastName": "Smith",
-      "age": 25
-    }
-    ```
-    </div>
-
-=== "Note de bas de page"
-    ```markdown
-    Voici une phrase avec une note de bas de page. [^1]
-
-    [^1]: Ceci est la note de bas de page.
-    ```
-    <div class="result" markdown>
-
-    Voici une phrase avec une note de bas de page. [^1]
-
-    [^1]: Ceci est la note de bas de page.
 
     </div>
 
@@ -253,3 +218,13 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
 
     X^2^
     </div>
+
+
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
