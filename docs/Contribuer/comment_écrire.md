@@ -1,6 +1,7 @@
 ---
 icon: material/lead-pencil
 title: "Comment écrire ?"
+description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant Markdown et des plugins avancés.
 ---
 
 Comme indiqué précédemment, notre documentation repose sur **MkDocs Material**. Cette plateforme nous permet d'intégrer divers plugins qui rendent la lecture de la documentation agréable et mettent en avant les informations clés. Ces outils améliorent l'expérience utilisateur en proposant une interface à la fois esthétique et fonctionnelle, facilitant l'accès rapide aux contenus essentiels.
