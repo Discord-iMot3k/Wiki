@@ -69,15 +69,19 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
 
 === "Liens et images"
     ```markdown
-    [Texte du lien](https://www.example.com)
+    [Texte du lien](https://imot3k.fr)
 
-    ![Texte alternatif de l'image](https://www.example.com/image.png)
+    ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
+
+    ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
     ```
     <div class="result" markdown>
 
-    [Texte du lien](https://www.example.com)
+    [Texte du lien](https://imot3k.fr)
 
-    ![Texte alternatif de l'image](https://www.example.com/image.png)
+    ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
+
+    ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
     </div>
 
 === "Code block"
@@ -93,6 +97,111 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     ```
     </div>
 
+=== "Séparateur"
+    ```markdown
+    ---
+    ```
+    <div class="result" markdown>
+
+    ---
+
+    !!! tip "Tip"
+        Le séparateur sera au final qu'une barre mais peut-être utile pour séparé des sections dans la page pour faciliter la lecture.
+    </div>
 
 
+<!-- md:option type:note -->
 
+:   !!! note
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:abstract -->
+
+:   !!! abstract
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:info -->
+
+:   !!! info
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:tip -->
+
+:   !!! tip
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:success -->
+
+:   !!! success
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:question -->
+
+:   !!! question
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:warning -->
+
+:   !!! warning
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:failure -->
+
+:   !!! failure
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:danger -->
+
+:   !!! danger
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:bug -->
+
+:   !!! bug
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:example -->
+
+:   !!! example
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
+
+<!-- md:option type:quote -->
+
+:   !!! quote
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+        purus auctor massa, nec semper lorem quam in massa.
