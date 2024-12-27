@@ -39,9 +39,9 @@ theme:
     - content.code.copy
     - content.code.annotate
   icon:
-    edit: material/pencil 
-    view: material/eye
-    repo: material/code-block-parentheses
+    edit: octicons/pencil-24
+    view: octicons/eye-24
+    repo: octicons/mark-github-24
     admonition:
       note: octicons/comment-16
       abstract: octicons/file-badge-16
