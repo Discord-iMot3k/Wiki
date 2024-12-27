@@ -43,7 +43,7 @@ theme:
     view: material/eye
     repo: material/code-block-parentheses
     admonition:
-      note: octicons/pin-16
+      note: octicons/comment-16
       abstract: octicons/file-badge-16
       info: octicons/info-16
       tip: octicons/squirrel-16
