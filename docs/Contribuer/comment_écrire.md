@@ -74,6 +74,8 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
 
     ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
+
+    ![Gif dans le dossier img](img/doom-ok.webp)
     ```
     <div class="result" markdown>
 
@@ -82,6 +84,12 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
 
     ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
+
+    ![Gif dans le dossier img](img/doom-ok.webp)
+
+    !!! warning "Petite note importante"
+        Dans cette documentation, il est conseillé d'enregistrer les images que vous créez au format webp ou avif dans un dossier assets présent dans chaque répertoire. Lorsque mkdocs génère la documentation, il télécharge automatiquement les images liées, mais ces liens ne sont pas permanents. Pour vos captures d'écran, veuillez utiliser un lien interne comme illustré plus haut.
+
     </div>
 
 === "Code block"
@@ -106,102 +114,142 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     ---
 
     !!! tip "Tip"
-        Le séparateur sera au final qu'une barre mais peut-être utile pour séparé des sections dans la page pour faciliter la lecture.
+        Le séparateur sera au final qu'une barre mais peut être utile pour séparé des sections dans la page pour faciliter la lecture.
     </div>
 
+## Markdown intermédiaire
 
-<!-- md:option type:note -->
+## Markdown intermédiaire
 
-:   !!! note
+=== "Tableau"
+    ```markdown
+    | Syntaxe | Description |
+    | ----------- | ----------- |
+    | En-tête | Titre |
+    | Paragraphe | Texte |
+    ```
+    <div class="result" markdown>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    | Syntaxe | Description |
+    | ----------- | ----------- |
+    | En-tête | Titre |
+    | Paragraphe | Texte |
 
-<!-- md:option type:abstract -->
+    </div>
 
-:   !!! abstract
+=== "Bloc de code délimité"
+    ````markdown
+    ```
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 25
+    }
+    ```
+    ````
+    <div class="result" markdown>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    ```
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 25
+    }
+    ```
+    </div>
 
-<!-- md:option type:info -->
+=== "Note de bas de page"
+    ```markdown
+    Voici une phrase avec une note de bas de page. [^1]
 
-:   !!! info
+    [^1]: Ceci est la note de bas de page.
+    ```
+    <div class="result" markdown>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    Voici une phrase avec une note de bas de page. [^1]
 
-<!-- md:option type:tip -->
+    [^1]: Ceci est la note de bas de page.
 
-:   !!! tip
+    </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+=== "ID de titre"
+    ```markdown
+    ### Mon super titre {#id-personnalisé}
+    ```
+    <div class="result" markdown>
 
-<!-- md:option type:success -->
+    ### Mon super titre {#id-personnalisé}
 
-:   !!! success
+    !!! note "Modification de l'ID personnalisé"
+        L'ID personnalisé dans un titre permet de remplacer l'ID généré automatiquement par un ID spécifique que vous définissez. Cela est utile lorsque l'ID par défaut, basé sur le texte du titre, n'est pas suffisamment descriptif ou est trop long. En ajoutant `{#id-personnalisé}` à un titre, vous pouvez créer un ancre unique et concise qui facilite la navigation et le référencement dans la documentation. Cela permet également de maintenir une cohérence dans les liens internes, surtout si le titre est modifié ultérieurement.
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    </div>
 
-<!-- md:option type:question -->
+=== "Liste de définitions"
+    ```markdown
+    terme
+    : définition
+    ```
+    <div class="result" markdown>
 
-:   !!! question
+    terme
+    : définition
+    </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+=== "Barré"
+    ```markdown
+    ~~Le monde est plat.~~
+    ```
+    <div class="result" markdown>
 
-<!-- md:option type:warning -->
+    ~~Le monde est plat.~~
+    </div>
 
-:   !!! warning
+=== "Liste de tâches"
+    ```markdown
+    - [x] Rédiger le communiqué de presse
+    - [ ] Mettre à jour le site web
+    - [ ] Contacter les médias
+    ```
+    <div class="result" markdown>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    - [x] Rédiger le communiqué de presse
+    - [ ] Mettre à jour le site web
+    - [ ] Contacter les médias
+    </div>
 
-<!-- md:option type:failure -->
+=== "Emoji"
+    ```markdown
+    C'est tellement drôle ! :joy:
+    ```
+    <div class="result" markdown>
 
-:   !!! failure
+    C'est tellement drôle ! :joy:
+    </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+=== "Surlignage"
+    ```markdown
+    Je dois surligner ces ==mots très importants==.
+    ```
+    <div class="result" markdown>
 
-<!-- md:option type:danger -->
+    Je dois surligner ces ==mots très importants==.
+    </div>
 
-:   !!! danger
+=== "Indice"
+    ```markdown
+    H~2~O
+    ```
+    <div class="result" markdown>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    H~2~O
+    </div>
 
-<!-- md:option type:bug -->
+=== "Exposant"
+    ```markdown
+    X^2^
+    ```
+    <div class="result" markdown>
 
-:   !!! bug
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:example -->
-
-:   !!! example
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
-
-<!-- md:option type:quote -->
-
-:   !!! quote
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-        purus auctor massa, nec semper lorem quam in massa.
+    X^2^
+    </div>
