@@ -150,16 +150,6 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
 
     </div>
 
-=== "Liste de définitions"
-    ```markdown
-    terme
-    : définition
-    ```
-    <div class="result" markdown>
-
-    terme
-    : définition
-    </div>
 
 === "Barré"
     ```markdown
@@ -217,14 +207,5 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     <div class="result" markdown>
 
     X^2^
+
     </div>
-
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
