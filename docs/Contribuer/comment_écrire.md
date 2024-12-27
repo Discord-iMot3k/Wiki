@@ -118,6 +118,10 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
         Le séparateur sera au final qu'une barre mais peut être utile pour séparé des sections dans la page pour faciliter la lecture.
     </div>
 
+
+!!! note "Information complémentaire"
+    En principe, ces syntaxes Markdown fonctionneront partout où le Markdown est utilisé, car il s'agit de la syntaxe Markdown directe sans aucun addon.
+
 ---
 
 ## Markdown intermédiaire
@@ -150,7 +154,6 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
         L'ID personnalisé dans un titre permet de remplacer l'ID généré automatiquement par un ID spécifique que vous définissez. Cela est utile lorsque l'ID par défaut, basé sur le texte du titre, n'est pas suffisamment descriptif ou est trop long. En ajoutant `{#id-personnalisé}` à un titre, vous pouvez créer un ancre unique et concise qui facilite la navigation et le référencement dans la documentation. Cela permet également de maintenir une cohérence dans les liens internes, surtout si le titre est modifié ultérieurement.
 
     </div>
-
 
 === "Barré"
     ```markdown
@@ -201,3 +204,6 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     !!! failure "Interdiction d'utiliser le surlignage dans cette doc"
 
     </div>
+
+!!! warning "Compatibilité des syntaxes Markdown"
+    Il est important de noter que certaines syntaxes Markdown, comme le surlignage ou les émojis, peuvent ne pas être prises en charge partout. Cependant, les tableaux et les listes de tâches devraient toujours fonctionner comme dans le Markdown de base, assurant ainsi une compatibilité et une cohérence dans la plupart des environnements.
