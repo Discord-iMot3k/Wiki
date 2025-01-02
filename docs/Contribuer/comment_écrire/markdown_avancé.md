@@ -1,7 +1,7 @@
 ---
 title: Markdown avancé
 icon: material/lead-pencil
-description: 
+description: wip
 weight: 4
 ---
 
