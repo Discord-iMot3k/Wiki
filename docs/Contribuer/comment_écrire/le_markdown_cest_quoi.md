@@ -1,5 +1,5 @@
 ---
-title: Comment écrire ?
+title: Le Markdown c'est quoi ?
 icon: material/lead-pencil
 description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant Markdown et des plugins avancés.
 weight: 1

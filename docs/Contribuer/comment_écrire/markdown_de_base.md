@@ -91,17 +91,31 @@ Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne pa
 </div>
 
 ## Code block
-````markdown
-``` bash
-echo "Hello world"
-```
-````
-<div class="result" markdown>
+=== "Normal"
+    ````markdown
+    ``` bash
+    for i in {1..1}; do echo "Hello world"; done
+    ```
+    ````
+    <div class="result" markdown>
 
-``` bash
-echo "Hello world"
-```
-</div>
+    ``` bash
+    for i in {1..1}; do echo "Hello world"; done
+    ```
+    </div>
+
+=== "Titré"
+    ````markdown
+    ``` powershell
+    (Get-ChildItem | Measure-Object).Count
+    ```
+    ````
+    <div class="result" markdown>
+
+    ``` powershell
+    (Get-ChildItem | Measure-Object).Count
+    ```
+    </div>
 
 ## Séparateur
 ```markdown
@@ -114,7 +128,3 @@ echo "Hello world"
 !!! tip "Tip"
     Le séparateur sera au final qu'une barre mais peut être utile pour séparé des sections dans la page pour faciliter la lecture.
 </div>
-
-
-!!! note "Information complémentaire"
-    Normalement, ces syntaxes Markdown devraient marcher partout où tu utilises du Markdown, vu que c'est du Markdown pur sans aucun ajout.
