@@ -2,7 +2,7 @@
 title: Comment écrire ?
 icon: material/lead-pencil
 description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant Markdown et des plugins avancés.
-weight: 2
+weight: 1
 ---
 
 # Comment écrire ?
@@ -11,119 +11,6 @@ Comme indiqué précédemment, notre documentation repose sur **MkDocs Material*
 
 Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la syntaxe fondamentale pour structurer le texte, créer des listes, insérer des liens et des images, entre autres. Une fois ces bases acquises, nous aborderons des fonctionnalités plus avancées grâce aux plugins que nous utilisons. Ces extensions enrichissent notre documentation en ajoutant des éléments interactifs et des mises en page élaborées, permettant de présenter l'information de manière plus dynamique et captivante.
 
-## Markdown de base
-
-=== "Titres"
-    ```markdown
-    # Titre de premier niveau
-
-    ## Titre de second niveau
-
-    ### Titre de troisième niveau
-    ```
-    <div class="result" markdown>
-
-    # Titre de premier niveau
-    ## Titre de second niveau
-    ### Titre de troisième niveau
-    </div>
-
-=== "Texte en gras et italique"
-    ```markdown
-    **Texte en gras**
-
-    *Texte en italique*
-
-    ***Texte en gras et italique***
-    ```
-    <div class="result" markdown>
-
-    **Texte en gras**
-
-    *Texte en italique*
-
-    ***Texte en gras et italique***
-    </div>
-
-
-=== "Listes à puces et numérotées"
-    ```markdown
-    - Élément 1
-    - Élément 2
-      - Sous-élément 2.1
-      - Sous-élément 2.2
-
-    1. Premier élément
-    2. Deuxième élément
-       1. Sous-élément 2.1
-       2. Sous-élément 2.2
-    ```
-    <div class="result" markdown>
-
-    - Élément 1
-    - Élément 2
-        - Sous-élément 2.1
-        - Sous-élément 2.2
-
-    1. Premier élément
-    2. Deuxième élément
-          1. Sous-élément 2.1
-          2. Sous-élément 2.2
-    </div>
-
-=== "Liens et images"
-    ```markdown
-    [Texte du lien](https://imot3k.fr)
-
-    ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
-
-    ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
-
-    ![Gif dans le dossier img](img/doom-ok.webp)
-    ```
-    <div class="result" markdown>
-
-    [Texte du lien](https://imot3k.fr)
-
-    ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
-
-    ![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
-
-    ![Gif dans le dossier img](img/doom-ok.webp)
-
-    !!! warning "Petite note importante"
-        Dans cette documentation, il est conseillé d'enregistrer les images que vous créez au format webp ou avif dans un dossier assets présent dans chaque répertoire. Lorsque mkdocs génère la documentation, il télécharge automatiquement les images liées, mais ces liens ne sont pas permanents. Pour vos captures d'écran, veuillez utiliser un lien interne comme illustré plus haut.
-
-    </div>
-
-=== "Code block"
-    ````markdown
-    ``` bash
-    echo "Hello world"
-    ```
-    ````
-    <div class="result" markdown>
-
-    ``` bash
-    echo "Hello world"
-    ```
-    </div>
-
-=== "Séparateur"
-    ```markdown
-    ---
-    ```
-    <div class="result" markdown>
-
-    ---
-
-    !!! tip "Tip"
-        Le séparateur sera au final qu'une barre mais peut être utile pour séparé des sections dans la page pour faciliter la lecture.
-    </div>
-
-
-!!! note "Information complémentaire"
-    Normalement, ces syntaxes Markdown devraient marcher partout où tu utilises du Markdown, vu que c'est du Markdown pur sans aucun ajout.
 
 ---
 
@@ -210,3 +97,10 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
 
 !!! warning "Compatibilité des syntaxes Markdown"
     Juste un petit rappel : certaines syntaxes Markdown, comme le surlignage ou les émojis, ne passent pas partout. Par contre, les tableaux et les listes de tâches, ça roule comme sur des roulettes dans la plupart des environnements, donc pas de souci de compatibilité ou de cohérence de ce côté-là.
+
+---
+
+## Markdown avancé
+Dans cette section, on va jeter un œil à des syntaxes qu'on pourrait dire spécifiques à **MkDocs Material**, grâce à des extensions Markdown, notamment celles qui viennent un peu de Python comme **pymdownx**. Ces outils nous permettent de pimenter notre doc avec des fonctionnalités avancées et des éléments interactifs, rendant la lecture plus fun et captivante. Même si on exagère un peu en disant que c'est exclusif à MkDocs Material, ça montre bien la puissance et la flexibilité qu'on peut obtenir avec ces extensions.
+
+

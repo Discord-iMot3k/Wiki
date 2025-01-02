@@ -3,7 +3,7 @@ icon: material/lightbulb-on-outline
 title: Solution utilisée
 slug: solution_utilisée
 description: Découverte de notre choix de MkDocs Material pour la documentation et des alternatives évaluées.
-weight: 1
+weight: -10
 ---
 
 # Solution utilisée
