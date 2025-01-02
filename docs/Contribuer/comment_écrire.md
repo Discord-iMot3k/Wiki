@@ -1,8 +1,11 @@
 ---
+title: Comment écrire ?
 icon: material/lead-pencil
-title: "Comment écrire ?"
 description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant Markdown et des plugins avancés.
+weight: 2
 ---
+
+# Comment écrire ?
 
 Comme indiqué précédemment, notre documentation repose sur **MkDocs Material**. Cette plateforme nous permet d'intégrer divers plugins qui rendent la lecture de la documentation agréable et mettent en avant les informations clés. Ces outils améliorent l'expérience utilisateur en proposant une interface à la fois esthétique et fonctionnelle, facilitant l'accès rapide aux contenus essentiels.
 
@@ -120,7 +123,7 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
 
 
 !!! note "Information complémentaire"
-    En principe, ces syntaxes Markdown fonctionneront partout où le Markdown est utilisé, car il s'agit de la syntaxe Markdown directe sans aucun addon.
+    Normalement, ces syntaxes Markdown devraient marcher partout où tu utilises du Markdown, vu que c'est du Markdown pur sans aucun ajout.
 
 ---
 
@@ -206,4 +209,4 @@ Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la sy
     </div>
 
 !!! warning "Compatibilité des syntaxes Markdown"
-    Il est important de noter que certaines syntaxes Markdown, comme le surlignage ou les émojis, peuvent ne pas être prises en charge partout. Cependant, les tableaux et les listes de tâches devraient toujours fonctionner comme dans le Markdown de base, assurant ainsi une compatibilité et une cohérence dans la plupart des environnements.
+    Juste un petit rappel : certaines syntaxes Markdown, comme le surlignage ou les émojis, ne passent pas partout. Par contre, les tableaux et les listes de tâches, ça roule comme sur des roulettes dans la plupart des environnements, donc pas de souci de compatibilité ou de cohérence de ce côté-là.
