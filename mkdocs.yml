@@ -91,6 +91,7 @@ plugins:
       branch: master
       enabled: !ENV [CI, false]
   - glightbox
+  - mkdocs-nav-weight
 
 markdown_extensions:
   - admonition

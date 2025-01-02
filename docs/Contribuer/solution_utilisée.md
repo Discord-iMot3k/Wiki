@@ -3,7 +3,10 @@ icon: material/lightbulb-on-outline
 title: Solution utilisée
 slug: solution_utilisée
 description: Découverte de notre choix de MkDocs Material pour la documentation et des alternatives évaluées.
+weight: 1
 ---
+
+# Solution utilisée
 
 Nous utilisons **MkDocs Material** pour notre documentation. Ce projet open-source offre une interface moderne et intuitive pour créer des sites de documentation. Vous pouvez en apprendre davantage sur MkDocs Material et ses fonctionnalités en visitant le site officiel : [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
