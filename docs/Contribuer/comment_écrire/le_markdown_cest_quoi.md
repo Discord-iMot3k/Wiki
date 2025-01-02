@@ -5,102 +5,71 @@ description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant
 weight: 1
 ---
 
-# Comment écrire ?
+# Le Markdown c'est quoi ?
 
 Comme indiqué précédemment, notre documentation repose sur **MkDocs Material**. Cette plateforme nous permet d'intégrer divers plugins qui rendent la lecture de la documentation agréable et mettent en avant les informations clés. Ces outils améliorent l'expérience utilisateur en proposant une interface à la fois esthétique et fonctionnelle, facilitant l'accès rapide aux contenus essentiels.
 
-Pour commencer, nous allons revisiter les bases du Markdown. Cela comprend la syntaxe fondamentale pour structurer le texte, créer des listes, insérer des liens et des images, entre autres. Une fois ces bases acquises, nous aborderons des fonctionnalités plus avancées grâce aux plugins que nous utilisons. Ces extensions enrichissent notre documentation en ajoutant des éléments interactifs et des mises en page élaborées, permettant de présenter l'information de manière plus dynamique et captivante.
+Pour structurer efficacement notre contenu, nous avons décidé de diviser cette partie de la documentation en trois niveaux distincts : Markdown de base, Markdown intermédiaire et Markdown avancé. Chaque section sera dédiée à un niveau de compétence spécifique, permettant aux utilisateurs de progresser à leur rythme.
 
+- __[:material-language-markdown:  Markdown de base](../markdown_de_base)__ couvrira la syntaxe fondamentale pour structurer le texte, créer des listes, insérer des liens et des images, entre autres.
 
----
+- __[:material-language-markdown:  Markdown intermédiaire](../markdown_intermédiaire)__ introduira des concepts plus poussés tels que les tableaux, les ID de titre personnalisés et le texte barré.
 
-## Markdown intermédiaire
+- __[:material-language-markdown: Markdown avancé](../markdown_avancé)__ explorera des fonctionnalités enrichies par les plugins, ajoutant des éléments interactifs et des mises en page élaborées pour présenter l'information de manière plus dynamique et captivante.
 
-=== "Tableau"
-    ```markdown
-    | Syntaxe | Description |
-    | ----------- | ----------- |
-    | En-tête | Titre |
-    | Paragraphe | Texte |
-    ```
-    <div class="result" markdown>
+Cette approche graduelle permettra à tous les contributeurs, qu'ils soient novices ou expérimentés, de maîtriser pleinement les outils à leur disposition pour améliorer la documentation.
 
-    | Syntaxe | Description |
-    | ----------- | ----------- |
-    | En-tête | Titre |
-    | Paragraphe | Texte |
+## Qu'est-ce que le Markdown ?
 
-    </div>
+**Markdown** est un langage de balisage léger créé en 2004 par [John Gruber](https://fr.wikipedia.org/wiki/John_Gruber), avec l'aide d'[Aaron Swartz](https://fr.wikipedia.org/wiki/Aaron_Swartz). L'objectif principal de Markdown est de permettre la création de documents lisibles et faciles à écrire sans nécessiter de connaissances approfondies en HTML ou autres langages de balisage.
 
-=== "ID de titre"
-    ```markdown
-    ### Mon super titre {#id-personnalisé}
-    ```
-    <div class="result" markdown>
+### Utilisations de Markdown
 
-    ### Mon super titre {#id-personnalisé}
+Markdown est largement utilisé dans divers domaines, notamment :
 
-    !!! note "Modification de l'ID personnalisé"
-        L'ID personnalisé dans un titre permet de remplacer l'ID généré automatiquement par un ID spécifique que vous définissez. Cela est utile lorsque l'ID par défaut, basé sur le texte du titre, n'est pas suffisamment descriptif ou est trop long. En ajoutant `{#id-personnalisé}` à un titre, vous pouvez créer un ancre unique et concise qui facilite la navigation et le référencement dans la documentation. Cela permet également de maintenir une cohérence dans les liens internes, surtout si le titre est modifié ultérieurement.
+- **Blogs et sites web** : Facilite la rédaction de contenu sans se plonger dans le code HTML.
+- **Messagerie instantanée et forums** : Permet de formater rapidement les messages.
+- **Documentation logicielle** : Utilisé pour écrire des fichiers README, guides d'installation, et autres documents techniques.
+- **Communauté scientifique** : Intégré dans des outils de publication favorisant la [Science ouverte](https://fr.wikipedia.org/wiki/Science_ouverte).
 
-    </div>
+### Conversion et Compatibilité
 
-=== "Barré"
-    ```markdown
-    ~~Le monde est plat.~~
-    ```
-    <div class="result" markdown>
+Un document écrit en Markdown peut être facilement converti en différents formats tels que :
 
-    ~~Le monde est plat.~~
-    </div>
+- **HTML** : Pour une publication sur le web.
+- **PDF** : Pour des documents imprimables.
+- **Autres formats** : Utilisant des outils comme Pandoc pour des conversions vers divers langages de balisage.
 
-=== "Liste de tâches"
-    ```markdown
-    - [x] Rédiger le communiqué de presse
-    - [ ] Mettre à jour le site web
-    - [ ] Contacter les médias
-    ```
-    <div class="result" markdown>
+Bien que Markdown ait été influencé par des langages de balisage existants tels que [Setext](https://fr.wikipedia.org/wiki/Setext), [Textile](https://fr.wikipedia.org/wiki/Textile_(langage_de_balisage)), et [reStructuredText](https://fr.wikipedia.org/wiki/ReStructuredText), son inspiration principale reste le format des courriers électroniques en mode texte.
 
-    - [x] Rédiger le communiqué de presse
-    - [ ] Mettre à jour le site web
-    - [ ] Contacter les médias
+!!! note "Variantes de Markdown"
+    Markdown n'a jamais été standardisé de manière formelle, ce qui a conduit à la création de nombreuses variantes comme [MultiMarkdown](https://fletcherpenney.net/multimarkdown/) et [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/). Ces variantes ajoutent des fonctionnalités supplémentaires pour répondre aux besoins spécifiques des utilisateurs et des plateformes.
 
-    !!! warning "Utilisation modérée"
-        Merci d'utiliser les listes de tâches avec modération, car elles occupent rapidement beaucoup d'espace...
+### Évolutions et Standardisation
 
-    </div>
+En mars 2016, dans le but de standardiser le langage Markdown, deux RFC (Request for Comments) ont été publiées :
 
-=== "Emoji /Icons"
-    ```markdown
-    C'est tellement drôle ! :joy: :material-cookie-alert:
-    ```
-    <div class="result" markdown>
+- **RFC 7763** : Introduit le type MIME `text/markdown` basé sur la variante originale de Markdown.
+- **RFC 7764** : Liste les variantes existantes telles que MultiMarkdown, GitHub Flavored Markdown, Pandoc, CommonMark, et Markdown Extra.
 
-    C'est tellement drôle ! :joy: :material-cookie-alert:
+L'initiative [CommonMark](https://commonmark.org/) lancée en 2012 vise à clarifier les ambiguïtés et à fournir une spécification précise du langage, adoptée par des plateformes comme [Stack Overflow](https://stackoverflow.com/), [GitLab](https://gitlab.com/), et [Reddit](https://www.reddit.com/).
 
-    !!! info "Listes d'émoji et d'icons"
-        Vous pouvez trouver la liste complète des icônes et des émojis sur la documentation officielle de MkDocs Material à l'adresse suivante : [Liste des icônes et émojis](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search).
-    </div>
+!!! tip "Pourquoi utiliser Markdown ?"
+    Markdown permet de créer des documents structurés et esthétiques avec une syntaxe simple et intuitive. Sa compatibilité avec de nombreux outils et plateformes en fait un choix privilégié pour la rédaction collaborative et la documentation technique.
 
-=== "Surlignage"
-    ```markdown
-    Je dois surligner ces ==mots très importants==.
-    ```
-    <div class="result" markdown>
+### Mises en Œuvre
 
-    Je dois surligner ces ==mots très importants==.
+Markdown est supporté par une multitude de langages de programmation et outils, notamment :
 
-    !!! failure "Interdiction d'utiliser le surlignage dans cette doc"
+| Langage  | Bibliothèque / Outil |
+|--------------|------------------------------|
+| **Python**   | [Markdown](https://pypi.org/project/Markdown/) |
+| **JavaScript** | [marked](https://github.com/markedjs/marked) |
+| **Ruby** | [Redcarpet](https://github.com/vmg/redcarpet) |
+| **PHP**  | [Parsedown](https://parsedown.org/) |
+| **Java** | [flexmark-java](https://github.com/vsch/flexmark-java) |
 
-    </div>
+Cette diversité permet une intégration facile de Markdown dans pratiquement n'importe quel environnement de développement ou système de gestion de contenu.
 
-!!! warning "Compatibilité des syntaxes Markdown"
-    Juste un petit rappel : certaines syntaxes Markdown, comme le surlignage ou les émojis, ne passent pas partout. Par contre, les tableaux et les listes de tâches, ça roule comme sur des roulettes dans la plupart des environnements, donc pas de souci de compatibilité ou de cohérence de ce côté-là.
-
----
-
-## Markdown avancé
-Dans cette section, on va jeter un œil à des syntaxes qu'on pourrait dire spécifiques à **MkDocs Material**, grâce à des extensions Markdown, notamment celles qui viennent un peu de Python comme **pymdownx**. Ces outils nous permettent de pimenter notre doc avec des fonctionnalités avancées et des éléments interactifs, rendant la lecture plus fun et captivante. Même si on exagère un peu en disant que c'est exclusif à MkDocs Material, ça montre bien la puissance et la flexibilité qu'on peut obtenir avec ces extensions.
 
 
