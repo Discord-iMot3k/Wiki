@@ -1,7 +1,7 @@
 ---
 title: Admonitions
 icon: octicons/alert-16
-description: wip
+description: Guide sur l'utilisation des admonitions dans MkDocs Material
 weight: 31
 ---
 
