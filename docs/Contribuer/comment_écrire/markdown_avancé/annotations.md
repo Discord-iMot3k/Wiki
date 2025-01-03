@@ -150,3 +150,15 @@ L'extension [Attribute Lists] est l'ingrédient clé pour ajouter des annotation
 </div>
 
 Avec cette astuce, des annotations peuvent également être ajoutées aux citations, listes, et à de nombreux autres éléments qui ne sont pas pris en charge par l'extension Listes d'attributs. De plus, notez que les blocs de code suivent des sémantiques différentes.
+
+## Source
+
+<div class="grid cards" markdown>
+
+-   :octicons-link-16: &nbsp; __[Source des Annotations](https://squidfunk.github.io/mkdocs-material/reference/annotations/)__
+
+    ---
+
+    Consultez la documentation officielle de Material pour MkDocs pour plus d'informations sur l'utilisation et la personnalisation des annotations.
+
+</div>
