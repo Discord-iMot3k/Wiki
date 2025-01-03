@@ -1,6 +1,6 @@
 ---
 title: Markdown de base
-icon: material/lead-pencil
+icon: material/numeric-1-circle
 description: Introduction aux bases du Markdown, incluant les titres, le texte en gras et italique, ainsi que les listes à puces et numérotées, sans nécessiter de plugins.
 weight: 2
 ---
