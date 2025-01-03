@@ -27,11 +27,11 @@ Les admonitions suivent une syntaxe simple : un bloc commence par `!!!`, suivi d
 
 </div>
 
-  [qualificateur de type]: #supported-types
+  [qualificateur de type]: #types-supportés
 
 ### Modifier le titre
 
-Par défaut, le titre sera égal au qualificateur de type en casse de titre. Cependant, il peut être changé en ajoutant une chaîne de caractères entre guillemets contenant du Markdown valide (y compris des liens, du formatage, ...) après le qualificateur de type :
+Par défaut, le titre sera égal au qualificateur de types. Cependant, il peut être changé en ajoutant une chaîne de caractères entre guillemets contenant du Markdown valide (y compris des liens, du formatage, ...) après le qualificateur de type :
 
 ``` markdown title="Admonition avec titre personnalisé"
 !!! note "Phasellus posuere in sem ut cursus"
@@ -78,7 +78,7 @@ Semblable à [modifier le titre], l'icône et le titre peuvent être entièremen
 
 ### Blocs rétractables
 
-Lorsque [Détails] est activé et qu'un bloc d'admonition commence par `???` au lieu de `!!!`, l'admonition est rendue comme un bloc rétractable avec un petit basculeur sur le côté droit :
+Lorsque qu'un bloc d'admonition commence par `???` au lieu de `!!!`, l'admonition est rendue comme un bloc rétractable avec un petit basculeur sur le côté droit :
 
 ``` markdown title="Admonition, rétractable"
 ??? note
@@ -118,9 +118,9 @@ L'ajout d'un `+` après le token `???` rend le bloc développé par défaut :
 
 </div>
 
-### Blocs en ligne
+### Blocs aligné
 
-Les admonitions peuvent également être rendues comme des blocs en ligne (par exemple, pour les barres latérales), en les plaçant à droite en utilisant les modificateurs `inline` + `end`, ou à gauche en utilisant uniquement le modificateur `inline` :
+Les admonitions peuvent également être rendues comme des blocs alignés (par exemple, pour les barres latérales), en les plaçant à droite en utilisant les modificateurs `inline` + `end`, ou à gauche en utilisant uniquement le modificateur `inline` :
 
 === ":octicons-arrow-right-16: inline end"
 
@@ -162,7 +162,7 @@ Les admonitions peuvent également être rendues comme des blocs en ligne (par e
 
     Utilisez `inline` pour aligner à gauche (droite pour les langues rtl).
 
-__Important__: les admonitions qui utilisent les modificateurs `inline` _doivent_ être déclarées avant le bloc de contenu avec lequel vous souhaitez les placer à côté. S'il n'y a pas assez d'espace pour rendre l'admonition à côté du bloc, l'admonition s'étendra sur toute la largeur de la fenêtre d'affichage, par exemple, sur les fenêtres d'affichage mobiles.
+__Important__ : les admonitions qui utilisent les modificateurs `inline` _doivent_ être déclarées avant le bloc de contenu avec lequel vous souhaitez les placer à côté. S'il n'y a pas assez d'espace pour rendre l'admonition à côté du bloc, l'admonition s'étendra sur toute la largeur de la fenêtre d'affichage, par exemple, sur les fenêtres d'affichage mobiles.
 
 ### Types supportés
 
@@ -222,8 +222,6 @@ Voici une liste des qualificateurs de type fournis par Material pour MkDocs, tan
 
     ---
 
-    Consultez la documentation officielle de Material pour MkDocs pour plus
-    d'informations sur l'utilisation et la personnalisation des admonitions.
+    Consultez la documentation officielle de Material pour MkDocs pour plus d'informations sur l'utilisation et la personnalisation des admonitions.
 
 </div>
-
