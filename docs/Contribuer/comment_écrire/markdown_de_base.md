@@ -105,14 +105,14 @@ Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne pa
     </div>
 
 === "Titré"
-    ````markdown
-    ``` powershell
+    ````markdown 
+    ``` powershell title="Powershell"
     (Get-ChildItem | Measure-Object).Count
     ```
     ````
     <div class="result" markdown>
 
-    ``` powershell
+    ``` powershell title="Powershell"
     (Get-ChildItem | Measure-Object).Count
     ```
     </div>
