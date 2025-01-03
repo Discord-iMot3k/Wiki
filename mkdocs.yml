@@ -28,16 +28,18 @@ theme:
     - navigation.sections
     - navigation.prune
     - navigation.top
+    - navigation.expand
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - search.share
-    - header.autohide
     - navigation.footer
     - content.action.edit
     - content.action.view
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
+    - toc.follow
   icon:
     edit: octicons/pencil-24
     view: octicons/eye-24

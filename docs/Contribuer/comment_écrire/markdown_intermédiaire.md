@@ -1,6 +1,6 @@
 ---
 title: Markdown intermédiaire
-icon: material/lead-pencil
+icon: material/numeric-2-circle
 description: Explorez les concepts de Markdown intermédiaire, incluant les tableaux, les ID de titre personnalisés, le texte barré et les listes de tâches, pour enrichir vos documents sans l'utilisation de plugins.
 weight: 3
 ---
