@@ -1,13 +1,13 @@
 ---
-title: Admonitions
+title: Les Avertissements
 icon: octicons/alert-16
-description: Guide sur l'utilisation des admonitions dans MkDocs Material
+description: Guide sur l'utilisation des avertissements dans MkDocs Material
 weight: 31
 ---
 
 ## Utilisation
 
-Les admonitions suivent une syntaxe simple : un bloc commence par `!!!`, suivi d'un seul mot-clé utilisé comme [qualificateur de type]. Le contenu du bloc suit à la ligne suivante, indenté de quatre espaces :
+Les avertissements suivent une syntaxe simple : un bloc commence par `!!!`, suivi d'un seul mot-clé utilisé comme [qualificateur de type]. Le contenu du bloc suit à la ligne suivante, indenté de quatre espaces :
 
 ``` markdown title="Admonition"
 !!! note
@@ -120,7 +120,7 @@ L'ajout d'un `+` après le token `???` rend le bloc développé par défaut :
 
 ### Blocs aligné
 
-Les admonitions peuvent également être rendues comme des blocs alignés (par exemple, pour les barres latérales), en les plaçant à droite en utilisant les modificateurs `inline` + `end`, ou à gauche en utilisant uniquement le modificateur `inline` :
+Les avertissements peuvent également être rendues comme des blocs alignés (par exemple, pour les barres latérales), en les plaçant à droite en utilisant les modificateurs `inline` + `end`, ou à gauche en utilisant uniquement le modificateur `inline` :
 
 === ":octicons-arrow-right-16: inline end"
 
@@ -162,7 +162,7 @@ Les admonitions peuvent également être rendues comme des blocs alignés (par e
 
     Utilisez `inline` pour aligner à gauche (droite pour les langues rtl).
 
-__Important__ : les admonitions qui utilisent les modificateurs `inline` _doivent_ être déclarées avant le bloc de contenu avec lequel vous souhaitez les placer à côté. S'il n'y a pas assez d'espace pour rendre l'admonition à côté du bloc, l'admonition s'étendra sur toute la largeur de la fenêtre d'affichage, par exemple, sur les fenêtres d'affichage mobiles.
+__Important__ : les avertissements qui utilisent les modificateurs `inline` _doivent_ être déclarées avant le bloc de contenu avec lequel vous souhaitez les placer à côté. S'il n'y a pas assez d'espace pour rendre l'admonition à côté du bloc, l'admonition s'étendra sur toute la largeur de la fenêtre d'affichage, par exemple, sur les fenêtres d'affichage mobiles.
 
 ### Types supportés
 
@@ -218,7 +218,7 @@ Voici une liste des qualificateurs de type fournis par Material pour MkDocs, tan
 
 <div class="grid cards" markdown>
 
--   :octicons-link-16: &nbsp; __[Source des Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)__
+-   :octicons-link-16: &nbsp; __[Source des avertissements](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)__
 
     ---
 

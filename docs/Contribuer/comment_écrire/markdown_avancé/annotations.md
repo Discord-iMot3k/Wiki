@@ -1,7 +1,7 @@
 ---
-title: Annotations
+title: Les Annotations
 icon: material/plus-circle
-description: wip
+description: Guide sur l'utilisation des annotations avancées en Markdown.
 weight: 32
 ---
 
@@ -29,7 +29,7 @@ Notez que la classe `annotate` doit être ajoutée uniquement au bloc le plus ex
 
 #### dans les annotations
 
-Lorsque [SuperFences] est activé, les annotations peuvent être imbriquées à l'intérieur d'autres annotations en ajoutant la classe `annotate` à l'élément de liste hébergeant le contenu de l'annotation, en répétant le processus :
+Lorsque [SuperFences](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#superfences) est activé, les annotations peuvent être imbriquées à l'intérieur d'autres annotations en ajoutant la classe `annotate` à l'élément de liste hébergeant le contenu de l'annotation, en répétant le processus :
 
 
 ``` markdown title="Text with nested annotations"
@@ -55,9 +55,9 @@ Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 
 </div>
 
-#### dans les admonitions
+#### dans les avertissements
 
-Les titres et les corps des [admonitions] peuvent également accueillir des annotations en ajoutant le modificateur `annotate` après le qualificateur de type, ce qui est similaire à la façon dont fonctionnent les [blocs en ligne] :
+Les titres et les corps des [avertissements] peuvent également accueillir des annotations en ajoutant le modificateur `annotate` après le qualificateur de type, ce qui est similaire à la façon dont fonctionnent les [blocs en ligne] :
 
 ``` markdown title="Admonition avec des annotations"
 !!! note annotate "Phasellus posuere in sem ut cursus (1)"
@@ -83,8 +83,8 @@ Les titres et les corps des [admonitions] peuvent également accueillir des anno
 
 </div>
 
-  [admonitions]: admonitions.md
-  [inline blocks]: admonitions.md#inline-blocks
+  [avertissements]: avertissements.md
+  [inline blocks]: avertissements.md#inline-blocks
 
 #### dans les onglets de contenu
 
