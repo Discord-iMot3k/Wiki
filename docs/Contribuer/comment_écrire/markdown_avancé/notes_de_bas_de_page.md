@@ -62,3 +62,18 @@ Les paragraphes peuvent être écrits sur la ligne suivante et doivent être ind
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus
     auctor massa, nec semper lorem quam in massa.
+
+
+## Source
+
+<div class="grid cards" markdown>
+
+-   :octicons-link-16: &nbsp; __[Source des notes de bas de page](https://squidfunk.github.io/mkdocs-material/reference/footnotes/)__
+
+    ---
+
+    Consultez la documentation officielle de Material pour MkDocs pour plus d'informations sur l'utilisation et la personnalisation des notes de bas de page.
+
+</div>
+
+
