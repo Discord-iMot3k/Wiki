@@ -1,7 +1,7 @@
 ---
 title: Les Diagrammes
 icon: material/graph-outline
-description: wip
+description: Guide sur l'utilisation avancée des diagrammes avec Markdown et Mermaid.js
 weight: 34
 ---
 
