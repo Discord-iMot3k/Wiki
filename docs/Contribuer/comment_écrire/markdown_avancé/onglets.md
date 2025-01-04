@@ -1,7 +1,7 @@
 ---
 title: Les Onglets
 icon: material/tab
-description: wip
+description: Guide sur l'utilisation des onglets de contenu en Markdown avancé pour organiser et présenter l'information de manière interactive.
 weight: 33
 ---
 
