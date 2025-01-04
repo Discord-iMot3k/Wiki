@@ -1,7 +1,7 @@
 ---
 title: Les Notes de bas de page
 icon: material/format-align-bottom
-description: wip
+description: Guide sur l'utilisation des notes de bas de page en Markdown avancé pour enrichir vos documents.
 weight: 35
 ---
 
