@@ -239,3 +239,17 @@ Besides the diagram types listed above, [Mermaid.js] provides support for
 [requirement diagrams], all of which are not officially supported by Material
 for MkDocs. Those diagrams should still work as advertised by [Mermaid.js], but
 we don't consider them a good choice, mostly as they don't work well on mobile.
+
+
+## Source
+
+<div class="grid cards" markdown>
+
+-   :octicons-link-16: &nbsp; __[Source des diagrammes](https://squidfunk.github.io/mkdocs-material/reference/diagrams/)__
+
+    ---
+
+    Consultez la documentation officielle de Material pour MkDocs pour plus d'informations sur l'utilisation et la personnalisation des diagrammes.
+
+</div>
+

@@ -140,3 +140,15 @@ Lorsque [SuperFences](https://squidfunk.github.io/mkdocs-material/setup/extensio
 </div>
 
   [avertissements]: avertissements.md
+
+## Source
+
+<div class="grid cards" markdown>
+
+-   :octicons-link-16: &nbsp; __[Source des onglets](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/)__
+
+    ---
+
+    Consultez la documentation officielle de Material pour MkDocs pour plus d'informations sur l'utilisation et la personnalisation des onglets de contenu.
+
+</div>
