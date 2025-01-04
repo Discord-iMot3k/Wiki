@@ -26,7 +26,6 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
-    - navigation.prune
     - navigation.top
     - navigation.expand
     - navigation.indexes
@@ -80,6 +79,7 @@ theme:
 plugins:
   - privacy
   - search
+  # - mermaid2
   - social:
       enabled: !ENV [CI, false]
   #- blog
@@ -123,6 +123,8 @@ markdown_extensions:
           case: lower
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.progressbar:
   - pymdownx.extra
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
