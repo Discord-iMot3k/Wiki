@@ -79,7 +79,7 @@ theme:
 plugins:
   - privacy
   - search
-  - mermaid2
+  # - mermaid2
   - social:
       enabled: !ENV [CI, false]
   #- blog
