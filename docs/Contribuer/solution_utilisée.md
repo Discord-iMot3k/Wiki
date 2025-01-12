@@ -8,24 +8,24 @@ weight: -10
 
 # Solution utilisée
 
-Nous utilisons **MkDocs Material** pour notre documentation. Ce projet open-source offre une interface moderne et intuitive pour créer des sites de documentation. Vous pouvez en apprendre davantage sur MkDocs Material et ses fonctionnalités en visitant le site officiel : [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+On a choisi (~~j'ai en réalité~~) [**MkDocs Material**](https://squidfunk.github.io/mkdocs-material/) pour faire cette documentation. C'est essentiellement parce que c'est open-source et gratuit. Aussi, parce qu'en réalité, MkDocs fonctionne super bien et permet de se focaliser sur le contenu plutôt que le contenant. L'interface est tout de même jolie et fonctionne bien sur mobile comme sur ordinateur, donc que du bénéfice à priori au moment où j'écris ces lignes (4 janvier 2025 🎇)
 
-## Pourquoi avons-nous choisi MkDocs Material ?
+## Pourquoi j'ai choisi Mkdocs Material ?
 
-La décision d'utiliser **MkDocs Material** pour notre documentation repose sur plusieurs facteurs clés qui répondent à nos besoins spécifiques en matière de gestion et de présentation de contenu. Voici quelques raisons pour lesquelles nous avons opté pour cette solution :
+Déjà de base MkDocs c'est un truc qui ressemble à ça en barebone : [Documentation Mkdocs](https://www.mkdocs.org/user-guide/writing-your-docs/)
 
-| Avantage                              | Description                                                                                   |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|
-| Interface moderne et intuitive        | Interface élégante et facile à naviguer, améliorant l'expérience utilisateur.                 |
-| Personnalisation avancée              | Nombreuses options pour adapter l'apparence et le comportement du site à notre identité visuelle. |
-| Support de Markdown                   | Utilisation de Markdown pour faciliter la rédaction et la gestion du contenu.                 |
-| Fonctionnalités de recherche puissantes| Recherche intégrée rapide et précise pour un accès facile aux informations.                   |
-| Intégration GitHub                    | Contrôle total sur les propositions et modifications via GitHub, assurant qualité et cohérence.|
-| Hébergement sur machine virtuelle dédiée | Hébergement chez iMot3k garantissant performances optimales et disponibilité constante.       |
+![exemple_mkdcos_barebone.webp](img/exemple_mkdcos_barebone.webp){ width="95%" style="border-radius: 10px;" }
+/// caption
+Désolé pour l'image en blanc mkdocs est comme ça de base.
+///
+
+Donc [Mkdocs](https://github.com/mkdocs/mkdocs/tree/master) est le produit de base, et nous utilisons un thème, plus précisément Mkdocs Material, qui est le thème le plus plébiscité et en réalité le plus abouti. Dans l'ensemble, comme cela permet de se focaliser sur le contenu et non le contenant, on se retrouve avec une belle interface pour un site de documentation.
+
+Pour que tout le monde puisse participer, la base est en Markdown, un langage de balisage très simple, donc même les personnes ne connaissant pas le Markdown peuvent l'apprendre relativement vite (Pas de panique si vous êtes vraiment perdu, nous acceptons de prendre des fichiers Word ou PDF et nous les convertirons pour vous). En plus, ce thème apporte pas mal de fonctionnalités supplémentaires pour rendre la documentation plus lisible et plus agréable à utiliser, rien que la recherche intégrée est un gros plus.
 
 ## Alternatives considérées
 
-Bien que MkDocs Material ait été notre choix final, nous avons également envisagé d'autres solutions. Voici quelques-unes des alternatives que nous avons évaluées, ainsi que leurs inconvénients :
+Bien que MkDocs Material ait été mon choix final, nous avons également envisagé d'autres solutions. Voici quelques-unes des alternatives que nous avons évaluées, ainsi que leurs inconvénients :
 
 === "Docusaurus"
 
@@ -56,5 +56,5 @@ Bien que MkDocs Material ait été notre choix final, nous avons également envi
     | Recherche limitée           | Les fonctionnalités de recherche sur Discord sont limitées, ce qui complique la tâche de retrouver des informations spécifiques dans un grand volume de messages. |
     | Pas de versioning           | Contrairement aux systèmes de documentation dédiés, Discord ne permet pas de suivre les modifications ou de gérer les versions de la documentation. |
 
-En conclusion, MkDocs Material s'est avéré être la solution la plus adaptée à nos besoins, offrant un équilibre parfait entre facilité d'utilisation, personnalisation et contrôle. Nous sommes convaincus que cette plateforme nous permettra de maintenir une documentation de haute qualité pour notre communauté.
+En conclusion, MkDocs Material s'est avéré être la solution la plus adaptée à nos besoins, offrant un équilibre parfait entre facilité d'utilisation, personnalisation et contrôle. Nous sommes convaincus que cet outil nous permettra de maintenir une documentation de haute qualité pour la communauté.
 
