@@ -6,7 +6,7 @@ weight: 2
 ---
 
 # Markdown de base
-Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne partout sans avoir besoin de plugins. C'est le Markdown pur et dur, celui qui doit marcher sur tous les systèmes qui le supportent.
+Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne partout sans avoir besoin de plugins. C'est le Markdown pur et dur, celui qui doit fonctionner sur tous les systèmes qui le supportent.
 
 ## Titres 
 ```markdown
@@ -86,7 +86,7 @@ Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne pa
 ![Gif dans le dossier img](../img/doom-ok.webp)
 
 !!! warning "Petite note importante"
-    Dans cette documentation, il est conseillé d'enregistrer les images que vous créez au format webp ou avif dans un dossier assets présent dans chaque répertoire. Lorsque mkdocs génère la documentation, il télécharge automatiquement les images liées, mais ces liens ne sont pas permanents. Pour vos captures d'écran, veuillez utiliser un lien interne comme illustré plus haut.
+    Dans cette documentation, il est conseillé d'enregistrer les images que vous créez au format webp ou avif dans un dossier assets/img présent dans chaque répertoire. Lorsque mkdocs génère la documentation, il télécharge automatiquement les images liées, mais ces liens ne sont pas permanents. Pour vos captures d'écran, veuillez utiliser un lien interne comme illustré plus haut.
 
 </div>
 

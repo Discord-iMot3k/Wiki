@@ -57,19 +57,4 @@ L'initiative [CommonMark](https://commonmark.org/) lancée en 2012 vise à clari
 !!! tip "Pourquoi utiliser Markdown ?"
     Markdown permet de créer des documents structurés et esthétiques avec une syntaxe simple et intuitive. Sa compatibilité avec de nombreux outils et plateformes en fait un choix privilégié pour la rédaction collaborative et la documentation technique.
 
-### Mises en Œuvre
-
-Markdown est supporté par une multitude de langages de programmation et outils, notamment :
-
-| Langage  | Bibliothèque / Outil |
-|--------------|------------------------------|
-| **Python**   | [Markdown](https://pypi.org/project/Markdown/) |
-| **JavaScript** | [marked](https://github.com/markedjs/marked) |
-| **Ruby** | [Redcarpet](https://github.com/vmg/redcarpet) |
-| **PHP**  | [Parsedown](https://parsedown.org/) |
-| **Java** | [flexmark-java](https://github.com/vsch/flexmark-java) |
-
-Cette diversité permet une intégration facile de Markdown dans pratiquement n'importe quel environnement de développement ou système de gestion de contenu.
-
-
 
