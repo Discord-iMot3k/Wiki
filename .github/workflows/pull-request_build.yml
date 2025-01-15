@@ -43,6 +43,6 @@ jobs:
             ...context.repo,
             issue_number: context.payload.pull_request.number,
             body: `L'URL de téléchargement est : ${uploadUrl}`
-          })
-        env:
-          upload_url: ${{ env.upload_url }}
+          });
+      env:
+        upload_url: ${{ env.upload_url }}
