@@ -96,7 +96,7 @@ plugins:
   - git-committers:
       repository: "Discord-iMot3k/wiki"
       branch: master
-      enabled: !ENV [CI, false]
+      #enabled: !ENV [CI, false]
   - glightbox
   - mkdocs-nav-weight
 
