@@ -25,3 +25,12 @@ jobs:
 
     - name: Build with MkDocs
       run: mkdocs build
+
+    - name: Upload to bashupload website
+      run: |
+        zip -r wikimot3k.zip ./site
+        UPLOAD_URL=$(curl -s --upload-file wikimot3k.zip https://bashupload.com/wikimot3k.zip)
+        echo "URL de téléchargement : $UPLOAD_URL"
+        echo "upload_url=$UPLOAD_URL" >> $GITHUB_ENV
+    - name: Afficher l'URL de téléchargement
+      run: echo "L'URL de téléchargement est : ${{ env.upload_url }}"
