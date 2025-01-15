@@ -29,21 +29,4 @@ jobs:
     - name: Upload to bashupload website
       run: |
         zip -r wikimot3k.zip ./site
-        UPLOAD_URL=$(curl bashupload.com -T wikimot3k.zip)
-        echo "URL de téléchargement : $UPLOAD_URL"
-        echo "upload_url=$UPLOAD_URL"
-
-    - name: Commenter l'URL de téléchargement sur la Pull Request
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const { github, context } = require('@actions/github');
-          const uploadUrl = process.env.upload_url;
-          if (!uploadUrl) {
-            throw new Error("L'URL de téléchargement est introuvable.");
-          }
-          github.rest.issues.createComment({
-            ...context.repo,
-            issue_number: context.payload.pull_request.number,
-            body: `L'URL de téléchargement est : ${uploadUrl}`
-          });
+        curl bashupload.com -T wikimot3k.zip
