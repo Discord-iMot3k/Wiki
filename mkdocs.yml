@@ -86,8 +86,13 @@ plugins:
   #- tags:
       #tags_file: tags.md
   - git-revision-date-localized:
+      type: date
       enable_creation_date: true
-      enabled: !ENV [CI, false]
+      fallback_to_build_date: false
+      strict: true
+      timezone: Europe/Paris
+      enable_git_follow: false
+      #enabled: !ENV [CI, false]
   # - offline
   - git-committers:
       repository: "Discord-iMot3k/wiki"
