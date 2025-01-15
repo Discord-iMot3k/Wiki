@@ -33,4 +33,5 @@ jobs:
         echo "URL de téléchargement : $UPLOAD_URL"
         echo "upload_url=$UPLOAD_URL" >> $GITHUB_ENV
     - name: Afficher l'URL de téléchargement
-      run: echo "L'URL de téléchargement est : ${{ env.upload_url }}"
+      run: |
+        echo "L'URL de téléchargement est : ${{ env.upload_url }}"
