@@ -39,10 +39,13 @@ jobs:
         script: |
           const { github, context } = require('@actions/github');
           const uploadUrl = process.env.upload_url;
+          if (!uploadUrl) {
+            throw new Error("L'URL de téléchargement est introuvable.");
+          }
           github.rest.issues.createComment({
             ...context.repo,
             issue_number: context.payload.pull_request.number,
             body: `L'URL de téléchargement est : ${uploadUrl}`
           });
       env:
-        upload_url: ${{ env.upload_url }}
+        upload_url: ${{ steps.upload_to_bashupload.outputs.upload_url }}
