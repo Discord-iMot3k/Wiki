@@ -31,10 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy_on_github
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Git Clone Repository
+        run: |
+          if git clone https://github.com/Discord-iMot3k/Wiki.git; then
+            echo "✅ Clonage du dépôt réussi."
+          else
+            echo "❌ Échec du clonage du dépôt."
+            exit 1
+          fi
 
       - name: Set Environment Variables
         env:
