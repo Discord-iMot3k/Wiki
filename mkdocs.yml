@@ -88,10 +88,9 @@ plugins:
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
-      fallback_to_build_date: false
-      strict: true
+      fallback_to_build_date: true
       timezone: Europe/Paris
-      enable_git_follow: false
+      enable_git_follow: true
       #enabled: !ENV [CI, false]
   # - offline
   - git-committers:
