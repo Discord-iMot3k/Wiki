@@ -32,6 +32,17 @@ jobs:
         UPLOAD_URL=$(curl -s --upload-file wikimot3k.zip https://bashupload.com/wikimot3k.zip)
         echo "URL de téléchargement : $UPLOAD_URL"
         echo "upload_url=$UPLOAD_URL" >> $GITHUB_ENV
-    - name: Afficher l'URL de téléchargement
-      run: |
-        echo "L'URL de téléchargement est : ${{ env.upload_url }}"
+
+    - name: Commenter l'URL de téléchargement sur la Pull Request
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const { github, context } = require('@actions/github');
+          const uploadUrl = process.env.upload_url;
+          github.rest.issues.createComment({
+            ...context.repo,
+            issue_number: context.payload.pull_request.number,
+            body: `L'URL de téléchargement est : ${uploadUrl}`
+          })
+        env:
+          upload_url: ${{ env.upload_url }}
