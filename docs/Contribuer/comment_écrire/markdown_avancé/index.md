@@ -1,11 +1,11 @@
 ---
-title: intro
+title: Markdown avancé
 icon: material/numeric-3-circle
 description: wip
 weight: 30
 ---
 
-# Markdown avancé
+# :material-numeric-3-circle: Markdown avancé
 
 !!! danger "Mal de crâne en approche"
     Alors, un petit avertissement avant de plonger dans le Markdown avancé : si t'es pas super à l'aise avec la syntaxe de base, ça peut vite devenir un casse-tête. Ici, tout est fait à la main, et ce qu'on écrit en Markdown va être rendu d'une certaine manière, ce qui peut rendre la lecture un peu compliquée si tu regardes directement le code Markdown. En plus, on balance pas mal d'infos d'un coup, donc prépare-toi à absorber tout ça !

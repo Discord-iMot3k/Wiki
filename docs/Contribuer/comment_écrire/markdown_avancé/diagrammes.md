@@ -5,6 +5,8 @@ description: Guide sur l'utilisation avancée des diagrammes avec Markdown et Me
 weight: 34
 ---
 
+# :material-graph-outline: Les Diagrammes
+
 !!! bug "Non disponible pour le moment"
     Le plugin semble bug ou alors j'ai merdé la config, donc pour le moment les diagrammes ne fonctionnes pas.
 

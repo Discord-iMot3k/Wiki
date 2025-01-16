@@ -6,7 +6,7 @@ description: Découverte de notre choix de MkDocs Material pour la documentation
 weight: -10
 ---
 
-# Solution utilisée
+# :material-lightbulb-on-outline: Solution utilisée
 
 On a choisi (~~j'ai en réalité~~) [**MkDocs Material**](https://squidfunk.github.io/mkdocs-material/) pour faire cette documentation. C'est essentiellement parce que c'est open-source et gratuit. Aussi, parce qu'en réalité, MkDocs fonctionne super bien et permet de se focaliser sur le contenu plutôt que le contenant. L'interface est tout de même jolie et fonctionne bien sur mobile comme sur ordinateur, donc que du bénéfice à priori au moment où j'écris ces lignes (4 janvier 2025 🎇)
 

@@ -5,7 +5,7 @@ description: Guide pour rédiger efficacement avec MkDocs Material, en utilisant
 weight: 1
 ---
 
-# Le Markdown c'est quoi ?
+# :material-lead-pencil: Le Markdown c'est quoi ?
 
 Comme indiqué précédemment, notre documentation repose sur **MkDocs Material**. Cette plateforme nous permet d'intégrer divers plugins qui rendent la lecture de la documentation agréable et mettent en avant les informations clés. Ces outils améliorent l'expérience utilisateur en proposant une interface à la fois esthétique et fonctionnelle, facilitant l'accès rapide aux contenus essentiels.
 
