@@ -13,7 +13,6 @@ jobs:
     - name: Clone repository
       run: |
         git clone https://github.com/${{ github.repository }}.git .
-        git checkout ${{ github.event.pull_request.head.sha }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -25,3 +24,8 @@ jobs:
 
     - name: Build with MkDocs
       run: mkdocs build
+
+    - name: Upload to bashupload website
+      run: |
+        zip -r wikimot3k.zip ./site
+        curl bashupload.com -T wikimot3k.zip

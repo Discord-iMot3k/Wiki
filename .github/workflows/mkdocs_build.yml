@@ -9,7 +9,11 @@ jobs:
   deploy_on_github:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Git Clone Repository
+        run: |
+          git clone https://github.com/Discord-iMot3k/Wiki.git .
+          git fetch --all
+          git reset --hard origin/master
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
