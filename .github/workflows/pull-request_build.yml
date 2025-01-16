@@ -13,7 +13,6 @@ jobs:
     - name: Clone repository
       run: |
         git clone https://github.com/${{ github.repository }}.git .
-        git checkout ${{ github.event.pull_request.head.sha }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
