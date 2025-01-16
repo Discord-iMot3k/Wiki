@@ -15,14 +15,17 @@ jobs:
           git fetch --all
           git reset --hard origin/master
       - name: Configure Git Credentials
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          echo "machine github.com login $GITHUB_ACTOR password $GITHUB_TOKEN" > ~/.netrc
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --force --remote-name origin
 
   deploy_to_production:
     runs-on: ubuntu-latest
