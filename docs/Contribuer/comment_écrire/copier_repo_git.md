@@ -14,5 +14,15 @@ Nous avons vu comment utiliser le markdown, maintenant il est temps de se plonge
 
 Ensuite, nous verrons évidemment comment contribuer en utilisant Git et plus précisément GitHub.
 
-## Contribution sans git
-Il vous sera obligatoire de télécharger la documentation depuis Github, [ici plus précisément](https://github.com/Discord-iMot3k/wiki).
+## Téléchargement sans git
+
+Il vous sera obligatoire de télécharger la documentation depuis Github, [ici plus précisément](https://github.com/Discord-iMot3k/wiki). Pour ce faire rien de plus simple vous pouvez télécharger le contenue du repo Git dans un fichier zip.
+
+![Télécharger en ZIP](../img/git_zip_download.webp)
+
+Le fichier devrait s'appeler tout simplement 
+```Text
+Wiki-master.zip
+```
+
+---
