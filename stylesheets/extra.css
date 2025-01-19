@@ -3,3 +3,24 @@
   text-align: justify;
 }
 
+/* Projet pour plus tard :) */
+/*.md-typeset code:not(.result[markdown] code),
+.md-typeset details:is([open]) > summary,
+.admonition-title,
+.md-typeset details,
+.md-typeset .admonition-title {
+  border-top-left-radius: .7rem !important;
+  border-top-right-radius: .7rem !important;
+}
+
+.md-typeset .highlight{
+  border-bottom-left-radius: .7rem !important;
+  border-bottom-right-radius: .7rem !important;
+}
+
+.md-typeset details:not([open]) > summary,
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: .7rem !important;
+}*/
+
