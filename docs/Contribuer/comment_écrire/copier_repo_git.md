@@ -1,7 +1,7 @@
 ---
 title: Copier le repo Git
 icon: material/numeric-4-circle
-description: WIP
+description: Découvrez comment copier un dépôt GitHub avec ou sans Git pour contribuer efficacement.
 weight: 5
 ---
 

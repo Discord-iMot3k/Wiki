@@ -14,7 +14,7 @@ On a choisi (~~j'ai en réalité~~) [**MkDocs Material**](https://squidfunk.gith
 
 Déjà de base MkDocs c'est un truc qui ressemble à ça en barebone : [Documentation Mkdocs](https://www.mkdocs.org/user-guide/writing-your-docs/)
 
-![exemple_mkdcos_barebone.webp](img/exemple_mkdcos_barebone.webp){ width="95%" style="border-radius: 10px;" }
+![exemple_mkdcos_barebone.webp](img/example_mkdcos_barebone.webp){ width="95%" style="border-radius: 10px;" }
 /// caption
 Désolé pour l'image en blanc mkdocs est comme ça de base.
 ///
