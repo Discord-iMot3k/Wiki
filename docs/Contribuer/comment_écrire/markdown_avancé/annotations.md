@@ -5,6 +5,8 @@ description: Guide sur l'utilisation des annotations avancées en Markdown.
 weight: 32
 ---
 
+# :material-plus-circle: Les Annotations
+
 ## Utilisation
 
 Les annotations se composent de deux parties : un marqueur, qui peut être placé n'importe où dans un bloc marqué avec la classe `annotate`, et un contenu situé dans une liste en dessous du bloc contenant le marqueur.

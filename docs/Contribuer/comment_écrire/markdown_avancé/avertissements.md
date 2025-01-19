@@ -5,6 +5,8 @@ description: Guide sur l'utilisation des avertissements dans MkDocs Material
 weight: 31
 ---
 
+# :octicons-alert-16: Les Avertissements
+
 ## Utilisation
 
 Les avertissements suivent une syntaxe simple : un bloc commence par `!!!`, suivi d'un seul mot-clé utilisé comme [qualificateur de type]. Le contenu du bloc suit à la ligne suivante, indenté de quatre espaces :

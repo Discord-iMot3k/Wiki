@@ -5,7 +5,7 @@ description: Introduction aux bases du Markdown, incluant les titres, le texte e
 weight: 2
 ---
 
-# Markdown de base
+# :material-numeric-1-circle: Markdown de base
 Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne partout sans avoir besoin de plugins. C'est le Markdown pur et dur, celui qui doit fonctionner sur tous les systèmes qui le supportent.
 
 ## Titres 

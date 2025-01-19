@@ -5,6 +5,8 @@ description: Guide sur l'utilisation des onglets de contenu en Markdown avancé 
 weight: 33
 ---
 
+# :material-tab: Les Onglets
+
 ## Utilisation
 
 Les blocs de code sont l'une des principales cibles à regrouper et peuvent être considérés comme un cas particulier d'onglets de contenu, car les onglets avec un seul bloc de code sont toujours rendus sans espacement horizontal :

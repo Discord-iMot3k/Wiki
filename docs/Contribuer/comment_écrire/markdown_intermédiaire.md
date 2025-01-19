@@ -5,7 +5,7 @@ description: Explorez les concepts de Markdown intermédiaire, incluant les tabl
 weight: 3
 ---
 
-# Markdown intermédiaire
+# :material-numeric-2-circle: Markdown intermédiaire
 Ici, on se concentre sur le Markdown intermédiaire, qui ne nécessite généralement pas de plugins mais qui, dans certains cas rares, peut ne pas être reconnu par les éditeurs Markdown les plus simples. C'est un niveau au-dessus du Markdown de base, offrant plus de fonctionnalités tout en restant largement compatible.
 
 

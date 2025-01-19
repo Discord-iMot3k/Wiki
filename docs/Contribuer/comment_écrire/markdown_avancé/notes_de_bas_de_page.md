@@ -5,6 +5,8 @@ description: Guide sur l'utilisation des notes de bas de page en Markdown avanc�
 weight: 35
 ---
 
+# :material-format-align-bottom: Les Notes de bas de page
+
 ## Utilisation
 
 ### Ajouter des références de notes de bas de page
