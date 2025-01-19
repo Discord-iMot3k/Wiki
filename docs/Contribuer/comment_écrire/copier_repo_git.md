@@ -33,3 +33,52 @@ Wiki-master.zip
 Pour télécharger un dépôt via GitHub Desktop sans être connecté, suivez ces étapes. Les étapes sont les mêmes, que vous soyez connecté ou non. Cela vous permet de travailler avec le code source sans utiliser la ligne de commande, tout en vous offrant la possibilité de vous connecter pour contribuer activement quand vous le souhaitez.
 
 ![Télécharger le repo depuis Github Desktop](../img/download_repo_github_desktop.webp)
+
+## Téléchargement avec Git CLI
+
+!!! info "Installer Git"
+    Vous pouvez télécharger et installer Git depuis [ce lien](https://git-scm.com/).
+
+Pour cloner le dépôt, utilisez la commande suivante dans votre terminal :
+
+```bash
+git clone https://github.com/Discord-iMot3k/wiki
+```
+
+### Créer une nouvelle branche
+
+Si vous souhaitez créer une branche différente pour effectuer des tests, utilisez la commande suivante après avoir cloné le dépôt :
+
+```bash
+git checkout -b nom-de-votre-branche
+```
+
+### Pousser vos modifications
+
+Pour pousser vos modifications sur GitHub, vous devrez vous identifier. Voici comment procéder :
+
+```bash
+git add .
+git commit -m "Votre message de commit"
+git push origin nom-de-votre-branche
+```
+
+### Exporter et envoyer votre branche sans GitHub
+
+Si vous ne souhaitez pas utiliser GitHub pour partager vos modifications, vous pouvez exporter votre branche en un fichier zip et l'envoyer sur notre serveur Discord. Voici comment faire :
+
+1. Assurez-vous d'être sur la branche que vous souhaitez exporter :
+
+    ```bash
+    git checkout nom-de-votre-branche
+    ```
+
+2. Archivez votre branche en un fichier zip :
+
+    ```bash
+    git archive -o nom-de-votre-branche.zip HEAD
+    ```
+
+3. Envoyez le fichier zip sur notre serveur Discord à l'adresse suivante : [discord.imot3k.fr](https://discord.imot3k.fr).
+
+
