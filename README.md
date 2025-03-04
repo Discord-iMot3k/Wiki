@@ -1,8 +1,7 @@
 <p align="center">
     <img src="https://github.wiki.imot3k.fr/global_assets/WikiMot3k.webp" alt="Logo de iMot3k" width="128px"/>
+   <h1>Wiki iMot3k</h1>
 </p>
-
-# Wiki iMot3k
 
 Bienvenue sur le Wiki de la communauté d'iMot3k, un projet communautaire du Discord iMot3k ([discord.imot3k.fr](https://discord.imot3k.fr)). Ce wiki a pour objectif de fournir des tutoriels simples ainsi que des documentations plus approfondies afin que chacun puisse s'y retrouver, apprendre et contribuer.
 
