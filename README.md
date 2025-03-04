@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<p align="center">
     <img src="https://github.wiki.imot3k.fr/global_assets/WikiMot3k.webp" alt="Logo de iMot3k" width="128px"/>
 </p>
 
