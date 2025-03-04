@@ -1,7 +1,7 @@
 ---
 title: Build et tester Mkdocs
 icon: material/numeric-5-circle
-description: WIP
+description: Apprenez à construire et tester votre site Mkdocs localement pour assurer la qualité de vos contributions avant de les publier.
 weight: 6
 ---
 
