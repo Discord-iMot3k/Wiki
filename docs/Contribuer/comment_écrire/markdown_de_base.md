@@ -71,9 +71,9 @@ Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne pa
 
 ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
 
-![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
+![Texte alternatif de l'image si elle ne charge pas]()
 
-![Gif dans le dossier img](img/doom-ok.webp)
+![Gif dans le dossier img](../img/doom-ok.webp)
 ```
 <div class="result" markdown>
 
@@ -81,7 +81,7 @@ Ici, on se concentre uniquement sur le Markdown de base, celui qui fonctionne pa
 
 ![Texte alternatif de l'image](https://media.tenor.com/s1LAPOXya-wAAAAM/internet-bravo.gif)
 
-![Texte alternatif de l'image si elle ne charge pas](https://example.com/example.png)
+![Texte alternatif de l'image si elle ne charge pas]()
 
 ![Gif dans le dossier img](../img/doom-ok.webp)
 
