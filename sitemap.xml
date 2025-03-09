@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.imot3k.fr/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/solution_utilis%C3%A9e/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/builds_and_test_mkdocs/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/copier_repo_git/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/fork_and_contribute/</loc>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/le_markdown_cest_quoi/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_de_base/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_interm%C3%A9diaire/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/annotations/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/avertissements/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/diagrammes/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/notes_de_bas_de_page/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
     <url>
          <loc>https://wiki.imot3k.fr/Contribuer/comment_%C3%A9crire/markdown_avanc%C3%A9/onglets/</loc>
-         <lastmod>2025-01-19</lastmod>
+         <lastmod>2025-03-09</lastmod>
     </url>
 </urlset>
