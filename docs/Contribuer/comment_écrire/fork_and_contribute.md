@@ -1,7 +1,7 @@
 ---
 title: Forker et Contribuer !
 icon: material/numeric-6-circle
-description: WIP
+description: Guide étape par étape pour forker et contribuer au dépôt GitHub du Wiki.
 weight: 7
 ---
 
