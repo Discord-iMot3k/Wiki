@@ -18,8 +18,6 @@ Avant de commencer, il vous faudra un compte GitHub :
 1. Rendez-vous sur [GitHub](https://github.com) et créez un compte si ce n’est pas déjà fait.  
 2. Connectez-vous à votre compte.
 
-!!! note "Aide visuelle"
-    Ici, vous pouvez insérer une capture d’écran montrant la page de connexion ou d’inscription.
 
 ---
 
@@ -40,8 +38,6 @@ Une fois sur la page GitHub du Wiki :
 1. Repérez le bouton **Fork** en haut à droite de l’interface.  
 2. Cliquez dessus pour créer votre propre copie du projet sur votre compte GitHub.
 
-!!! note "Aide visuelle"
-    Ici, vous pouvez ajouter une capture d’écran du bouton **Fork**.
 
 ---
 
