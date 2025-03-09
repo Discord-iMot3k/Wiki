@@ -135,5 +135,3 @@ Votre PR est soumise ! L’équipe du Wiki :
 
 !!! success "Félicitations !"
     Vous maîtrisez maintenant l’art du fork et de la contribution à un dépôt GitHub. Votre aide est précieuse pour faire progresser le Wiki !
-
-```
