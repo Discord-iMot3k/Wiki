@@ -14,7 +14,9 @@ On a choisi (~~j'ai en réalité~~) [**MkDocs Material**](https://squidfunk.gith
 
 Déjà de base MkDocs c'est un truc qui ressemble à ça en barebone : [Documentation Mkdocs](https://www.mkdocs.org/user-guide/writing-your-docs/)
 
-![exemple_mkdcos_barebone.webp](img/example_mkdcos_barebone.webp){ width="95%" style="border-radius: 10px;" }
+![exemple_mkdcos_barebone.webp](img/example_mkdcos_barebone.webp)
+
+{ width="95%" style="border-radius: 10px;" }
 /// caption
 Désolé pour l'image en blanc mkdocs est comme ça de base.
 ///
@@ -56,5 +58,8 @@ Bien que MkDocs Material ait été mon choix final, nous avons également envisa
     | Recherche limitée           | Les fonctionnalités de recherche sur Discord sont limitées, ce qui complique la tâche de retrouver des informations spécifiques dans un grand volume de messages. |
     | Pas de versioning           | Contrairement aux systèmes de documentation dédiés, Discord ne permet pas de suivre les modifications ou de gérer les versions de la documentation. |
 
-En conclusion, MkDocs Material s'est avéré être la solution la plus adaptée à nos besoins, offrant un équilibre parfait entre facilité d'utilisation, personnalisation et contrôle. Nous sommes convaincus que cet outil nous permettra de maintenir une documentation de haute qualité pour la communauté.
-
+En conclusion, MkDocs Material s'est avéré être la solution la plus adaptée à nos besoins, offrant un équilibre parfait entre facilité d'utilisation, personnalisation et contrôle. Nous sommes convaincus que cet outil nous permettra de maintenir une documentation de haute qualité pour la communauté.\
+\
+\
+\
+Ceci est un test hahahahahahahaha
